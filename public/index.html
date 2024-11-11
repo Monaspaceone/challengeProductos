@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Google fonts Header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!--body-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Dosis:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<body>
+    <header>
+        <h1><i class="fa-solid fa-heart"></i>AluraGeek<i class="fa-solid fa-heart"></i></h1>
+    </header>
+
+    <div class="content">
+        <!-- Formulario para agregar producto -->
+        <div class="form-container">
+            <h2>Agregar Producto</h2>
+            <form id="product-form">
+                <input type="text" id="nombre" placeholder="Nombre del producto" required>
+                <input type="number" id="precio" placeholder="Precio" required>
+                <input type="url" id="imagen" placeholder="URL de la imagen" required>
+                <div class="button-container">
+                    <button type="submit" id="send-button">Enviar</button>
+                    <button type="button" id="clear-button">Limpiar</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Lista de productos -->
+        <div class="productos-container">
+            <h2>Productos</h2>
+            <ul id="productos-lista">
+                <!-- Los productos se insertarán aquí dinámicamente con JS -->
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p><i class="fa-solid fa-star"></i>Maria Soledad Oscar - 2024 - Proyecto para Alura Latam<i class="fa-solid fa-star"></i></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
